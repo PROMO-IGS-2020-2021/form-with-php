@@ -24,3 +24,6 @@
  - rouge => red => R => [00;ff]   == f1
  - vert => green => G => [00;ff]
  - blue => blue => B => [00;ff] */`
+
+
+en local // localhost , 127.0.0.1

@@ -15,9 +15,8 @@
         <form action="traitement.php" method="POST">
             <legend>Formulaire d'enregistrement</legend>
             <input type="text" id="nom" name="nom" placeholder="Veuillez ecrire votre nom s'il vous plait" required> <br>
-            <input type="email" required placeholder="Veuillez ecrire votre email s'il vous plait"> <br>
-            <input type="file" required> <br>
-            <textarea placeholder="Veuillez ecrire votre description s'il vous plait" required></textarea>
+            <input type="email" name="email" required placeholder="Veuillez ecrire votre email s'il vous plait"> <br>
+            <textarea placeholder="Veuillez ecrire votre description s'il vous plait" name="description" required></textarea>
             <input type="submit" name="envoyer" value="Envoyer" />
         </form>
     </body>

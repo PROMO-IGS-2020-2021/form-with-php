@@ -21,8 +21,8 @@ form input[type="text"], form input[type="email"], textarea {
 }
 
 
-form input[type="text"]:hover, form input[type="email"]:focus, textarea:focus {
-    border: 1px solid #06a355e1 !important;
+form input[type="text"]:focus, form input[type="email"]:focus, textarea:focus {
+    outline-color: red;
 }
 
 form input::placeholder, textarea::placeholder {
