@@ -1,7 +1,5 @@
 <?php
     if(isset($_POST['envoyer'])) {
-        echo "Traitement en cours ...";
-        sleep(3);
         $nom = $_POST['nom'];
         $email = $_POST['email'];
         $description = $_POST['description'];
