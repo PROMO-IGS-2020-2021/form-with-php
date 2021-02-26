@@ -1,14 +1,18 @@
 <?php
+    include "db.php";
     if(isset($_POST['envoyer'])) {
-        echo "Traitement en cours ...";
-        sleep(3);
         $nom = $_POST['nom'];
         $email = $_POST['email'];
         $description = $_POST['description'];
-        
-        echo "<br/>Les informations du formulaire sont : <br />";
-        echo "nom = " . $nom . "<br />";
-        echo "email = ". $email . "<br />";
-        echo "description = " . $description;
+        // //insertion dans la base de donnée
+        $request = "INSERT INTO utilisateurs(nom, email, description)
+        VALUES ('$nom', '$email', '$description')";
+
+        if ($connexion->query($request) === TRUE) {
+        echo "données insérées avec succès";
+        } else {
+        echo "Problème lors de l insertion des données: " . $request. "<br>" . $connexion->error;
+        }
     }
+  
 ?>
