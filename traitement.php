@@ -10,6 +10,7 @@
 
         if ($connexion->query($request) === TRUE) {
         echo "données insérées avec succès";
+        //header("Location:index.php");
         } else {
         echo "Problème lors de l insertion des données: " . $request. "<br>" . $connexion->error;
         }

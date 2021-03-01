@@ -2,7 +2,7 @@
 
 $server = "localhost";
 $user="root";
-$password = "goueguy0802";
+$password = "";
 $dbname = "igs_db";
 
 $connexion = new mysqli($server,$user,$password,$dbname);
